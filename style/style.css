@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Maven+Pro&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Maven+Pro&family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* Header Start */
-:root{
-  --main-font:'Manrope', sans-serif;
-  --body-font: 'Maven Pro', sans-serif;
-  --second-font: 'Montserrat', sans-serif;
+:root {
+  --main-font: "Manrope", sans-serif;
+  --body-font: "Maven Pro", sans-serif;
+  --second-font: "Montserrat", sans-serif;
 }
 * {
   margin: 0;
@@ -12,8 +12,9 @@
   box-sizing: border-box;
 }
 
-ul,li{
-  margin:0 !important;
+ul,
+li {
+  margin: 0 !important;
   padding: 0 !important;
 }
 
@@ -30,7 +31,7 @@ ul,li{
   align-items: center;
   z-index: 100;
   font-family: "Lexend Deca", sans-serif;
-  background: #3c354f;
+  background: rgba(96, 180, 223, 0.3);
 }
 .header__img {
   display: inline-flex;
@@ -44,7 +45,7 @@ ul,li{
 }
 .logo {
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color: black;
   text-decoration: none;
   font-weight: 700;
 }
@@ -97,7 +98,7 @@ ul,li{
   .sign-up {
     display: block;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 700;
   }
@@ -203,35 +204,34 @@ ul,li{
   font-family: "Lexend Deca", sans-serif;
 }
 
-
 /* Brand slider End */
 /* Main End */
 
 /* Footer start */
 .footer {
   width: 100%;
-  background: #3c354f;
+  background: rgba(96, 180, 223, 0.3);
   height: 100%;
   font-family: "Lexend Deca", sans-serif;
 }
 .footer__info p {
   font-size: 1.2rem;
   font-weight: 600;
-  color: white;
+  color: black;
   margin-bottom: 35px;
   font-family: "Lexend Deca", sans-serif;
 }
 .footer__info li a {
   list-style: none;
   margin-top: 15px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .footer__info li {
   list-style: none;
   margin-top: 15px;
   transition: 0.3s ease;
-  color: white;
+  color: black;
 }
 .footer__info li:hover {
   transform: translateX(5px);
@@ -243,14 +243,15 @@ ul,li{
 }
 .footer__logo {
   font-size: 2rem;
-  color: white;
+  color: black;
   text-decoration: none;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 600;
 }
 .social__media a {
   display: inline-flex;
-  background: #fff;
+  background: rgba(65, 176, 232, 0.3);
+  backdrop-filter: blur(50px);
   align-items: center;
   justify-self: center;
   padding: 5px 8px;
@@ -258,7 +259,7 @@ ul,li{
 }
 .footer__location {
   font-size: 1.2rem;
-  color: white;
+  color: black;
   font-weight: 600;
 }
 /* Breakpoint */
@@ -281,7 +282,7 @@ ul,li{
 /* Footer end */
 
 /*======================Form Start====================*/
-input{
+input {
   outline: transparent;
 }
 .main-form {
@@ -291,7 +292,7 @@ input{
     rgb(117, 117, 188)
   );
   height: 100vh;
-  display: flex;  
+  display: flex;
   align-content: center;
   justify-content: center;
 }
@@ -570,5 +571,3 @@ input{
 }
 
 /*======================Form End====================*/
-
-

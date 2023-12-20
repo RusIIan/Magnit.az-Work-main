@@ -18,8 +18,8 @@
       <a href="home.html" class="logo">Logo</a>
       <input type="checkbox" id="check">
       <label for="check" class="icons">
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <i class='bx bx-x' id="close-icon"></i>
+        <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>
+        <i class='bx bx-x' style='color:#ffffff' id="close-icon"></i>
       </label>
       <nav class="navbar">
         <a href="home.html" style="--i:0">Home</a>
@@ -31,10 +31,12 @@
   </header>
 
   <main>
-    <div class="container mt-5 mb-5">
+    <div class="container-xxl container-xl container-lg  mt-5 mb-5">
       <div class="row">
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mt-5" id="left-site-menu ">
-          <ul class="left-site-menu">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mt-5" id="left-site-menu">
+          <ul id="sidebar" class="left-site-menu">
+            <span id="closeSidebar" class="closeIcon d-lg-none d-xxl-none d-xl-none "><i class='close-icon-bx bx bx-x'
+                undefined></i></span>
             <li><a href="#" class="menu">Televizor<img class="arrow__icon" src="img/icons/arrow.png" alt=""></a>
               <ul class="submenu">
                 <li><a href="#">Hofmen</a></li>
@@ -58,7 +60,13 @@
             </li>
           </ul>
         </div>
-        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+
+        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
+          <div id="sidebar-btn" class="product-sidebar-filter">
+            <button class="product-sidebar-filter__button">
+              <span class="text"> Filter </span>
+            </button>
+          </div>
           <div class="row g-4">
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
               <div class="card-product">
@@ -66,8 +74,8 @@
                   <img src="img/product/camashir.jpg" alt="" />
                 </div>
                 <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
+                  <p class="card-product__header--title">Camaşır</p>
+                  <p class="card-product__header--price">250 AZN</p>
                 </div>
               </div>
             </div>
@@ -77,8 +85,8 @@
                   <img src="img/product/camashir.jpg" alt="" />
                 </div>
                 <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
+                  <p class="card-product__header--title">Camaşır</p>
+                  <p class="card-product__header--price">250 AZN</p>
                 </div>
               </div>
             </div>
@@ -88,69 +96,15 @@
                   <img src="img/product/camashir.jpg" alt="" />
                 </div>
                 <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card-product">
-                <div class="card-product__image">
-                  <img src="img/product/camashir.jpg" alt="" />
-                </div>
-                <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card-product">
-                <div class="card-product__image">
-                  <img src="img/product/camashir.jpg" alt="" />
-                </div>
-                <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card-product">
-                <div class="card-product__image">
-                  <img src="img/product/camashir.jpg" alt="" />
-                </div>
-                <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card-product">
-                <div class="card-product__image">
-                  <img src="img/product/camashir.jpg" alt="" />
-                </div>
-                <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
-              <div class="card-product">
-                <div class="card-product__image">
-                  <img src="img/product/camashir.jpg" alt="" />
-                </div>
-                <div class="card-product__header">
-                  <h2 class="card-product__header--title">Camaşır</h2>
-                  <h2 class="card-product__header--price">250 AZN</h2>
+                  <p class="card-product__header--title">Camaşır</p>
+                  <p class="card-product__header--price">250 AZN</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
 
