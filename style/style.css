@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Maven+Pro&family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Header Start */
 :root {
-  --main-font: "Manrope", sans-serif;
-  --body-font: "Maven Pro", sans-serif;
-  --second-font: "Montserrat", sans-serif;
+  --header-footer: "Montserrat", sans-serif;
 }
 * {
   margin: 0;
@@ -18,6 +16,19 @@ li {
   padding: 0 !important;
 }
 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(96, 180, 223);
+}
 /* Header Start */
 
 .header {
@@ -45,9 +56,13 @@ li {
 }
 .logo {
   font-size: 2rem;
-  color: black;
+  padding: 10px;
+  border-radius: 19px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #ce5120, #bd6d4f, #fddede);
   text-decoration: none;
-  font-weight: 700;
+  font-family: var(--header-footer);
+  font-weight: 800;
 }
 .sign-up {
   display: none;
@@ -63,10 +78,11 @@ li {
 }
 .navbar a {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 2.5rem;
+  font-family: var(--header-footer);
 }
 .icons {
   position: absolute;
@@ -106,8 +122,7 @@ li {
     display: inline-flex;
   }
   .logo {
-    position: absolute;
-    left: 47%;
+    display: none;
   }
   .icons #close-icon {
     display: none;
@@ -125,7 +140,7 @@ li {
     transition: 0.3s ease;
   }
   #check:checked ~ .navbar {
-    height: 15rem;
+    height: 12rem;
   }
   .navbar a {
     display: block;
@@ -201,7 +216,8 @@ li {
   font-size: 2rem;
   font-weight: 500;
   line-height: 18px;
-  font-family: "Lexend Deca", sans-serif;
+  margin-left: 50px;
+  font-family: var(--header-footer);
 }
 
 /* Brand slider End */
@@ -212,20 +228,21 @@ li {
   width: 100%;
   background: rgba(96, 180, 223, 0.3);
   height: 100%;
-  font-family: "Lexend Deca", sans-serif;
 }
 .footer__info p {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
   margin-bottom: 35px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: var(--header-footer);
 }
 .footer__info li a {
   list-style: none;
   margin-top: 15px;
   color: black;
   text-decoration: none;
+  font-family: var(--header-footer);
+  font-weight: 500;
 }
 .footer__info li {
   list-style: none;
@@ -240,19 +257,25 @@ li {
 }
 .footer__info ul li span {
   font-size: 15px;
+  font-family: var(--header-footer);
+  font-weight: 600;
 }
 .footer__logo {
   font-size: 2rem;
-  color: black;
+  padding: 10px;
+  border-radius: 19px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #ce5120, #bd6d4f, #fddede);
   text-decoration: none;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 600;
+  font-family: var(--header-footer);
+  font-weight: 800;
 }
 .social__media a {
   display: inline-flex;
-  background: rgba(65, 176, 232, 0.3);
+  background: linear-gradient(90deg, #ce5120, #bd6d4f, #fddede);
   backdrop-filter: blur(50px);
   align-items: center;
+  color: white;
   justify-self: center;
   padding: 5px 8px;
   border-radius: 10%;

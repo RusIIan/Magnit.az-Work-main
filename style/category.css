@@ -64,17 +64,19 @@ a {
 .product-sidebar-filter {
   display: none;
 }
-#closeSidebar{
+#closeSidebar {
   display: none;
 }
 /* left menu mobil start */
 /* Оставим только одно правило @media screen and (max-width: 768px) */
-
+.main{
+  height: 100vh;
+}
 @media screen and (max-width: 768px) {
   .product-sidebar-filter {
     display: block !important;
   }
-  #closeSidebar{
+  #closeSidebar {
     display: block;
   }
   #sidebar {
@@ -85,11 +87,17 @@ a {
     top: 72px;
     left: -300px;
     transition: left 0.7s ease;
-    padding: 50px 40px 0px 40px !important;
+    padding: 50px 35px 0px 35px !important;
     z-index: 2;
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 80%;
+    max-height: 100%;
   }
 
   #sidebar.visible {
+    display: block;
     top: 72px;
     left: 0px;
     transition: left 0.7s ease;
@@ -155,7 +163,6 @@ a {
   }
 }
 
-
 @media screen and (max-width: 576px) {
   .card-product__image {
     text-align: center;
@@ -168,12 +175,11 @@ a {
 
   .card-product__header--price {
     font-size: 1.5em;
-    transition: font-size .5s ease;
+    transition: font-size 0.5s ease;
   }
 
   .card-product__header--title {
     font-size: 1.5em;
-    transition: font-size .5s ease;
-    /
+    transition: font-size 0.5s ease;
   }
 }
